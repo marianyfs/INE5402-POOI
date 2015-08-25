@@ -7,7 +7,6 @@ Pasta Src1:
 - Tratamento de exceção com 'do' 'while' e 'try' 'catch';
 - Comentários abordando a forma de tratamento utilizada;
 - Classe unica (POE);
-- Algoritimo na Classe Principal;
 
 Pasta Src2:
 
