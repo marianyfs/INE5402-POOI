@@ -1,40 +1,43 @@
 import javax.swing.JOptionPane;
 
 public class Interface {
+	
+	// Classe de Intera√ß√£o com o usu√°rio
 
 	public Interface() {
 		super();
 	}
 
-//------- SolicitaÁ„o e Convers„o dos Valores --------------------------
+//------- Solicita√ß√£o e Convers√£o dos Valores --------------------------
 	public double pegueValorRaio() {
 
 		double raio;
 
 		do {
 			try {
-				// SolicitaÁ„o do Raio
-				String valorRaio = JOptionPane.showInputDialog("ForneÁa o valor do Raio");
+				// Solicita√ß√£o do Raio
+				String valorRaio = JOptionPane.showInputDialog("Forne√ßa o valor do Raio");
 				raio = Double.parseDouble(valorRaio);
 				break;
 
 			} catch (NumberFormatException e) {
-				// Tratamento da ExceÁ„o
-				JOptionPane.showMessageDialog(null,"Informe apenas n˙meros (0.0)");
+				// Tratamento da Exce√ß√£o
+				JOptionPane.showMessageDialog(null,"Informe apenas n√∫meros (0.0)");
 			}
 		} while (true);
 
 		return raio;
 	}
 
-//--------------------- Mensagem que mostra o Volume para o usu·rio ----
+//--------------------- Mensagem que mostra o Volume para o usu√°rio ----
+
+	/*Metodo que informa o valor calculado para o usu√°rio e recebe
+	* uma variavel double como parametro que em conjunto com a
+	* classe Principal e Esfera recebe o resultado final do Volume.
+	*/
 	public void mostreVolume(double vVolume) {
 		
-		/*Metodo que informa o valor calculado para o usu·rio e recebe
-		 * uma variavel double como parametro que em conjunto com a
-		 * classe Principal e Esfera recebe o resultado final do Volume.
-		*/
-		JOptionPane.showMessageDialog(null, "O Valor do Volume da Esfera È: "+ vVolume);
+		JOptionPane.showMessageDialog(null, "O Valor do Volume da Esfera √©: "+ vVolume);
 	}
 
 }
