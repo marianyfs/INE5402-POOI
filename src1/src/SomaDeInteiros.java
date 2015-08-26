@@ -4,7 +4,7 @@ public class SomaDeInteiros {
 
 	public static void main (String [] parametros){
 
-//--------------------- DeclaraÁ„o de Variaveis --------------------
+//--------------------- Declara√ß√£o de Variaveis --------------------
 		int primValor, segValor, soma;
 
 //--------------------- Instancia de Variaveis --------------------- 
@@ -12,47 +12,66 @@ public class SomaDeInteiros {
 		segValor = 0;
 		soma = 0;
 
-//--------------------- SolicitaÁ„o e Convers„o dos Valores --------
+//--------------------- Solicita√ß√£o e Convers√£o dos Valores --------
 
-/* 
-* Para efetuar uma convers„o de modo que exceÁıes como receber letras
-* em variaveis int; double; float n„o ocorra ultilizaremos um laÁo  que 
-* trata casos especÌficos
-*/
+	/* 
+	* Para efetuar uma convers√£o de modo que exce√ß√µes como receber letras
+	* em variaveis int; double; float n√£o ocorra ultilizaremos um la√ßo  que 
+	* trata casos espec√≠ficos 'do' 'while' 'try' 'catch'
+	*/
 
-		do { // Inicio de um bloco de repetiÁ„o
+		do { // Inicio de um bloco de repeti√ß√£o
 
-			try { // cÛdigo que inclui comandos que podem gerar uma situaÁ„o de exceÁ„o
+			try { // c√≥digo que inclui comandos que podem gerar uma exce√ß√£o
 				
-				String valorA = JOptionPane.showInputDialog("Digite o valor inicial"); // SolicitaÁ„o do valor
-				primValor = Integer.parseInt(valorA); // Convers„o do Valor
+				String valorA = JOptionPane.showInputDialog("Digite o valor inicial");
+			// Utilizamos o m√©todo JOptionPane.showInputDialog para solicitar ao usu√°rio que informe
+			// um dado necess√°rio para que a opera√ß√£o possa ser realizada
+				primValor = Integer.parseInt(valorA);
+			// O M√©todo JOptionPane trabalha apenas com Strings, por isso devemos converter os valores
+			// informados pelo usu√°rio (armazenados em uma String) para o tipo de variavel desejado
+			// que permite a manipula√ß√£o do dado, nesse caso convertemos a String para int (inteiro)
 				
-				break; // cÛdigo que 'para' o Try caso a exceÁ„o n„o seja encontrada e "retorna" False para o 'while'
+				break; // c√≥digo que 'para' o Try caso a exce√ß√£o n√£o seja encontrada e "retorna" False para o 'while'
 
-			} catch (NumberFormatException e) { // bloco de tratamento associado a exceÁ„o encontrada
+			} catch (NumberFormatException e) { // bloco de tratamento associado a exce√ß√£o encontrada
 
 				JOptionPane.showMessageDialog(null, 
-						"Informe apenas n˙meros inteiros"); // Mensagem informando o Usu·rio sobre o Erro de DigitaÁ„o
+						"Informe apenas n√∫meros inteiros"); // Mensagem informando o Usu√°rio sobre o Erro de Digita√ß√£o
 			}
-		} while (true); // CondiÁ„o de repetiÁ„o que finaliza o laÁo 'do' caso o while receba um valor falso "fornecido" pelo Try Catch
+		} while (true); // Condi√ß√£o de repeti√ß√£o que finaliza o la√ßo 'do' caso o while receba um valor falso "fornecido" pelo Try Catch
 
-
+	// Uma breve explica√ß√£o:
+	
+	// La√ßo de Repeti√ß√£o 'do' 'while(condi√ß√£o)': trabalham em conjunto dentro das chaves 'do' inserimos o queremos que
+	// o programa fa√ßa ('do') enquanto ('while') uma condi√ß√£o for, ou n√£o, satisfeita.
+ 
+	// La√ßos 'try' 'catch(exce√ß√£o)': trabalham em conjunto para tratar determinada exce√ß√£o captada pelo programa ainda
+	// quando este est√° sendo executado, sem que o programa pare assim que o erro ocorrer, nessa caso, se voc√™ apagar os
+	// comandos:  linha 23; linha 25; linha 37 √† 42 rodar o programa e assim que for solicitado o valor inicial
+	// 'Digite o valor inicial' uma palavra, letra ou caracter especial for informado, ap√≥s dar 'ok', o programa ir√° parar
+	// e uma mensagem de erro ser√° apresentada na IDE. Os comandos 'try' e 'catch' portanto n√£o permitem que isso ocorra
+	
 		do {
 			try {
 				String valorB = JOptionPane.showInputDialog("Digite o valor a ser Somado");
 				segValor = Integer.parseInt(valorB);
 				break;
 			} catch (NumberFormatException e) {
-				JOptionPane.showMessageDialog(null, "Informe apenas n˙meros inteiros");
+				JOptionPane.showMessageDialog(null, "Informe apenas n√∫meros inteiros");
 			}
 			
 		} while (true);
 
 //--------------------- Calculo ------------------------------------
 		soma = primValor + segValor;
+	// Como visto a cima para fazer uma opera√ß√£o matem√°tica basta utilizar os caracteres
+	// e a sequencia l√≥gica respeitando () * / + -
 
 //--------------------- Resultado ----------------------------------
-		JOptionPane.showMessageDialog(null, "A soma entre os valores" + primValor + " e " + segValor + " È " + soma);
+		JOptionPane.showMessageDialog(null, "A soma entre os valores" + primValor + " e " + segValor + " √© " + soma);
+	// Para mostrar ao usu√°rio uma mensagem que informa resultados ultilizaremos o m√©todo	
+	// JOPtionPane.showMenssageDialog que em uma caixa de textos expoe a mensagem criada. 
 	}
 
 
