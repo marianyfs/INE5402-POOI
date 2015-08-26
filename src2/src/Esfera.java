@@ -25,15 +25,15 @@ public class Esfera {
 	}
 //-------  Método que recebe o valor de uma variavel -------------------
 
+	/* Este método é ultilizado em conjunto com a Classe Interface e Principal
+	* é responsável por gravar (por isso é um método sem retorno 'void')
+	* o valor do raio digitado pelo usuário em uma variavel local (da classe Esfera)
+	* que será ultilizada no método fornecaVolume obedecendo os pontos do 1. e 2. do
+	* ALGORÍTIMO exposto na Classe Principal */
+
 	public void recebaRaio(double vRaio) {
-
-/* Este método é ultilizado em conjunto com a Classe Interface e Principal
-* é responsável por gravar (por isso é um método sem retorno 'void')
-* o valor do raio digitado pelo usuário em uma variavel local (da classe Esfera)
-* que será ultilizada no método fornecaVolume obedecendo os pontos do 1. e 2. do
-* ALGORÍTIMO exposto na Classe Principal */
-
-		raio = vRaio;
+	raio = vRaio;
 	}
+	
 
 }
