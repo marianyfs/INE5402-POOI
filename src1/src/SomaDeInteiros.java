@@ -66,7 +66,8 @@ public class SomaDeInteiros {
 //--------------------- Calculo ------------------------------------
 		soma = primValor + segValor;
 	// Como visto a cima para fazer uma operação matemática basta utilizar os caracteres
-	// e a sequencia lógica respeitando () * / + -
+	// e a sequencia lógica respeitando: parenteses() muliplicação * divisão /
+	// resto da divisão % adição + subtração -
 
 //--------------------- Resultado ----------------------------------
 		JOptionPane.showMessageDialog(null, "A soma entre os valores" + primValor + " e " + segValor + " é " + soma);
