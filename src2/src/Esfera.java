@@ -18,7 +18,7 @@ public class Esfera {
 	public double fornecaVolume() {
 
 		volume = (4 * Math.PI) * (Math.pow(raio, 3) / 3);
-		// Math.PI : Método criado que comporta o valor de PI
+		// Math.PI : Constante que comporta o valor de PI
 		// Math.pow(base,expoente) : Método que trabalha com Potenciação onde, nesse caso: (raio³)
 
 		return volume;
