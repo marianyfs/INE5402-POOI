@@ -31,7 +31,6 @@ Pasta Src4:
 - Comentários abordando Parametros para Metodos de Mensagem;
 - Classes separadas em Paralelepipedo; Interface; Principal (POO);
 - Algoritimo na Classe Principal;
-- 
 
 Pasta Src5:
  - Exercício: Elabore  um  programa  que  calcula  o  salário  líquido  de  um
