@@ -3,8 +3,8 @@ import javax.swing.JOptionPane;
 public class Exercicio2 {
 
 	/*
-	 * Faça um programa que leia uma série de números inteiros e os armazene em
-	 * um array. Em seguida, o programa deve determinar se nessa série de
+	 * FaÃ§a um programa que leia uma sÃ©rie de nÃºmeros inteiros e os armazene em
+	 * um array. Em seguida, o programa deve determinar se nessa sÃ©rie de
 	 * valores aparece algum valor repetido.
 	 * 
 	 */
@@ -17,7 +17,7 @@ public class Exercicio2 {
 		for (int i = 0; i < array.length; i++) {
 
 			array[i] = Integer
-					.parseInt(JOptionPane.showInputDialog("Digite o número para a posição: [ " + (i + 1) + " ]"));
+					.parseInt(JOptionPane.showInputDialog("Digite o nÃºmero para a posiÃ§Ã£o: [ " + (i + 1) + " ]"));
 
 		}
 
@@ -27,7 +27,9 @@ public class Exercicio2 {
 			// controle
 			boolean repeats = false;
 
-			// procura se o número atual já existe antes dele mesmo
+			// procura se o nÃºmero atual jÃ¡ existe antes dele mesmo
+			// outra maneira de construir o for para que a comparaÃ§Ã£o nÃ£o seja feita 2 vezes Ã©:
+			// for (int j = i+1; j < array.length; ++i)
 			for (int j = 0; j < i; ++j) {
 				if (array[i] == array[j]) {
 					repeats = true;
@@ -35,7 +37,7 @@ public class Exercicio2 {
 				}
 			}
 
-			// se repete, aumenta contador de repetições, se não, coloca no
+			// se repete, aumenta contador de repetiÃ§Ãµes, se nÃ£o, coloca no
 			// unique
 			if (repeats) {
 				++repeated;
@@ -44,8 +46,8 @@ public class Exercicio2 {
 			}
 		}
 
-		JOptionPane.showMessageDialog(null, "Há " + unique + " valores únicos no array.");
-		JOptionPane.showMessageDialog(null, "Houve " + repeated + " repetições no array.");
+		JOptionPane.showMessageDialog(null, "HÃ¡ " + unique + " valores Ãºnicos no array.");
+		JOptionPane.showMessageDialog(null, "Houve " + repeated + " repetiÃ§Ãµes no array.");
 	}
 
 }
