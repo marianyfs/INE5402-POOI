@@ -4,9 +4,8 @@ public class Exercicio3 {
 	/*
 	 
 	 * Para um grupo de valores reais, determinar o desvio
-	padr„o em relaÁ„o ‡ mÈdia dos valores. Armazene os
+	padr√£o em rela√ß√£o √† m√©dia dos valores. Armazene os
 	valores em um array de reais.
-	ï O desvio padr„o (DP) pode ser obtido por:
 
 	*/
 	public static void main(String[] args) {
@@ -16,20 +15,22 @@ public class Exercicio3 {
 		
 		double resultado = 0.0,
 			   somatorioA = 0.0,
-			   somaValores = 0.0,
-			   somatorioB = 0.0;
+			   somatorioB = 0.0,
+			   somaValores = 0.0;
 		
+		// preenchimento do array
 		for (int i = 0; i < array.length; i++){
 			
 			array[i] = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor de [ " + (i+1) + " ]"));
-			
+		// calculo do somat√≥rio de todos os valores elevados ao quadrado e soma de todos os valores recebidos	
 			somatorioA += Math.pow(array[i], 2);
 			somaValores += array[i];
 		}
-		
+		// calculo do somat√≥rio da soma de todos os valores elevados ao quadrado
 		somatorioB += Math.pow(somaValores, 2);	
+		//aplica√ß√£o da formula dada no exercicio
 		resultado = ((somatorioA - (somatorioB / array.length)) / (array.length - 1));
-		
+		//apresenta√ß√£o do resultado
 		JOptionPane.showMessageDialog(null, "Resultado: " + resultado);
 	}
 	
