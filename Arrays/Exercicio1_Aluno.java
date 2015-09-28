@@ -62,11 +62,11 @@ public class Exercicio1_Aluno {
 
 		return media;
 	}
-
-	private double maiorNota = 0.0, menorNota = 20.0;
 	
 // ---CALCULO MAIOR NOTA -----------------------------------------------------------------
 
+	private double maiorNota = 0.0, menorNota = 20.0;
+	
 	public double calculoMaiorNota(){
 		
 		for (int i = 0; i < notas.length; i++) {
@@ -92,14 +92,10 @@ public class Exercicio1_Aluno {
 		return menorNota;
 	}
 	
-// ---CALCULO DA DIFERENÇA ENTRE A MAIOR E A MENOR NOTA -----------------------------------------------------------------
+// ---CALCULO DA DIFERENÃ‡A ENTRE A MAIOR E A MENOR NOTA -----------------------------------------------------------------
 	
 	public double diferencaNotas(){
-		
-		double diferenca = 0.0;
-		
-		diferenca = maiorNota - menorNota;
-		
-		return diferenca;
+
+		return  maiorNota - menorNota;
 	}
 }
