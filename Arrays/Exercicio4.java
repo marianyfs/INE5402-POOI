@@ -4,20 +4,20 @@ public class Exercicio4 {
 	/*
 	 * 
 	 * Elabore um programa que leia um array X com N elementos reais e mostre as
-	 * posições que o maior e o menor elemento ocupam no array
+	 * posiÃ§Ãµes que o maior e o menor elemento ocupam no array
 	 * 
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		double[] array = new double[10];
-
-		int menor = 0, maior = 0;
-
+		double[] array = new double[10]; 	// array
+		int menor = 0, maior = 0;		// variaveis para comparaÃ§Ã£o
+		
+		// preenchimento do array
 		for (int i = 0; i < array.length; i++) {
 
 			array[i] = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor para [ " + (i) + " ]"));
-
+			// comparaÃ§Ã£o do valor recebido com os valores do array
 			if (array[i] < array[menor]) {
 				menor = i;
 			}
@@ -25,9 +25,9 @@ public class Exercicio4 {
 				maior = i;
 			}
 		}
-
-		JOptionPane.showMessageDialog(null, "Maior valor: " + array[maior] + " Posição: [ " + maior + " ]" +
-										 "\n Menor valor: " + array[menor] + " Posição: [ " + menor + " ]");
+		
+		JOptionPane.showMessageDialog(null, "Maior valor: " + array[maior] + " PosiÃ§Ã£o: [ " + maior + " ]" +
+										 "\n Menor valor: " + array[menor] + " PosiÃ§Ã£o: [ " + menor + " ]");
 	}
 
 }
