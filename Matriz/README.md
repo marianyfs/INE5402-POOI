@@ -24,5 +24,5 @@ N por M.
 
 3. Para uma matriz de ordem NxN, determinar:
 
-a) Soma dos elementos da diagonal principal.
+a) Soma dos elementos da diagonal principal;
 b) Produto dos elementos da diagonal secundária.
