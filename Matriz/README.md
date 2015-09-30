@@ -1,13 +1,13 @@
 Exemplo:
 
 Implemente um programa que:
-•O usuário informa a ordem da matriz;
-•O usuário informa os elementos da matriz;
-•A   lógica   da   aplicação   calcula   a   soma   da
+- O usuário informa a ordem da matriz;
+- O usuário informa os elementos da matriz;
+- A   lógica   da   aplicação   calcula   a   soma   da
 segunda linha da matriz;
-•A lógica da aplicação calcula a soma de todos
+- A lógica da aplicação calcula a soma de todos
 os elementos da matriz.
-•A  aplicação  deve  ser  implementada  seguindo
+- A  aplicação  deve  ser  implementada  seguindo
 uma arquitetura em três camadas
 
 Exercicios:
