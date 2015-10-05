@@ -19,16 +19,16 @@ public class Questao2 {
 
 		for (int i = 1; i != 0; i++) {
 
-			// SOLICITACAO DE VALORES PARA O USU¡RIO
+			// SOLICITACAO DE VALORES PARA O USU√ÅRIO
 
 			distanciaAx = Double.parseDouble(JOptionPane
-					.showInputDialog("ForneÁa a Distancia A (x)"));
+					.showInputDialog("Forne√ßa a Distancia A (x)"));
 			distanciaAy = Double.parseDouble(JOptionPane
-					.showInputDialog("ForneÁa a Distancia A (y)"));
+					.showInputDialog("Forne√ßa a Distancia A (y)"));
 			distanciaBx = Double.parseDouble(JOptionPane
-					.showInputDialog("ForneÁa a Distancia B (x)"));
+					.showInputDialog("Forne√ßa a Distancia B (x)"));
 			distanciaBy = Double.parseDouble(JOptionPane
-					.showInputDialog("ForneÁa a Distancia B (y)"));
+					.showInputDialog("Forne√ßa a Distancia B (y)"));
 
 			distanciaA = distanciaAy - distanciaAx;
 			distanciaB = distanciaBy - distanciaBx;
@@ -49,7 +49,7 @@ public class Questao2 {
 
 			// LETRA C
 
-			if (distanciaPontos <= 10.0 && distanciaPontos <= 18.0) {
+			if (distanciaPontos >= 10.0 && distanciaPontos <= 18.0) {
 
 				quantidadePares = quantidadePares + 1;
 
