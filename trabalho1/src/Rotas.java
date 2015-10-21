@@ -54,8 +54,8 @@ public class Rotas {
 		// Inteiro que guardará o maior número de chegadas da cidade pesquisada;
 		// a cidade correspondente e as chegadas existentes para determinada
 		// cidade
-		int maiorNumeroChegadas = 0, cidade = 0, chegadas;
-
+		int maiorNumeroChegadas = 0, chegadas;
+		int cidade = -1;
 		for (int i = 0; i < matrizRotas.length; i++) {
 			// ultilização do método de calculo de chegadas de uma cidade (int
 			// k)
@@ -67,7 +67,8 @@ public class Rotas {
 				// armazenamento do indice da cidade com maior numero de
 				// chegadas
 				cidade = i;
-			}
+				
+		}
 		}
 		// retorno do método
 		return cidade;
@@ -81,9 +82,14 @@ public class Rotas {
 		for (int indice = 0; indice < matrizRotas.length; indice++) {
 			// k, defimido pelo usuário é testado para saber se existe chegada e
 			// saida diferentes, caso houver retorna falso
-			if (matrizRotas[indice][k] != matrizRotas[k][indice]) {
 
-				return false;
+			if (indice != k) { // se o indice for diferente de K os valores são
+								// testados
+
+				if (matrizRotas[indice][k] != matrizRotas[k][indice]) {
+
+					return false;
+				}
 			}
 		}
 		return true;
