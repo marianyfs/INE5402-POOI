@@ -1,3 +1,13 @@
+Federal University of Santa Catarina.
+
+Computer Science Course.
+
+INE5402 - Oriented Programming Object
+
+This repository contains exercises, tests and work practice of the discipline of Oriented Programming Object. Here you have a repository in Portuguese.
+
+-----------------------------------------------------------------------------------------------
+
 Exercícios propostos em sala pela Profª Plentz
 Resoluções e comentários por Mariany Ferreira
 
