@@ -2,9 +2,9 @@ Federal University of Santa Catarina.
 
 Computer Science Course.
 
-INE5402 - Oriented Programming Object
+INE5402 - Object-oriented programming
 
-This repository contains exercises, tests and work practice of the discipline of Oriented Programming Object. Here you have a repository in Portuguese.
+This repository contains exercises, tests and work practice of the discipline of Object-oriented programming. Here you have a repository in Portuguese.
 
 -----------------------------------------------------------------------------------------------
 
